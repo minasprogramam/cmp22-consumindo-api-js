@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "JetBrains Mono";
+  color: #d5d3d3;
+}
+
+body {
+  height: 95vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  align-items: center;
+  background-image: url(./yugi.jpg);
+  background-size: cover;
+}
+
+#demo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 400px;
+}
+
+.card .image {
+  width: 100%;
+  align-self: center;
+  box-shadow: 1px 1px 10px #7f8fa6;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.type {
+  align-self: flex-start;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.type::before {
+  content: '✡️';  
+  font-style: normal;
+  margin-right: 2px;
+}
+
+.description {
+  margin-top: 10px;
+}
